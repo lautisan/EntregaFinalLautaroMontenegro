@@ -1,0 +1,331 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  /* background: linear-gradient(black 19%, #161720 27%); */
+}
+
+header {
+  background-color: black;
+  background: url(../img/peakyBlindersAchtergrond.jpg) no-repeat center center fixed;
+  height: 65vh;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0.7;
+  background-color: black;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Imbue", serif;
+  color: white;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translateX(-50%);
+  letter-spacing: 12px;
+  font-size: 400%;
+  font-weight: 400;
+}
+
+.externe-nav {
+  z-index: 2;
+  width: 100%;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.771);
+  padding: 10px 20px;
+}
+
+.nav-links {
+  display: flex;
+}
+
+.nav-links li {
+  list-style: none;
+  flex: 1;
+  text-transform: uppercase;
+}
+
+.nav-links a {
+  color: black;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.nav-links a:hover {
+  color: rgba(0, 0, 0, 0.541);
+}
+
+#logo-nav {
+  flex: 3;
+}
+
+#logo-nav :hover {
+  color: black;
+}
+
+main {
+  text-align: center;
+  position: relative;
+}
+
+.webshop {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row-gap: 30px;
+  grid-column-gap: 30px;
+  list-style: none;
+}
+
+.product-foto {
+  width: 70%;
+  height: auto;
+  border: 3px solid #ccc6a4;
+  border-radius: 2px;
+}
+
+.webshop li {
+  position: relative;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-foto:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
+}
+
+.product-info {
+  margin: 10px 0px;
+  padding: 10px 0px;
+  display: flex;
+  width: 70%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #1b1c29;
+  color: #ccc6a4;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.product-beschrijving {
+  font-size: 14px;
+  color: white;
+  margin: 4px 0px;
+}
+
+.product-prijs {
+  font-size: 14px;
+  color: red;
+}
+
+.oude-prijs {
+  color: grey;
+  font-size: 13px;
+}
+
+.achtergrond-popup {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  position: fixed;
+  z-index: 10;
+  animation-name: popup;
+  animation-duration: 0.15s;
+  animation-timing-function: ease-in-out;
+}
+
+.inhoud-popup {
+  width: 550px;
+  height: 450px;
+  background-color: #f1f1f1ec;
+  padding: 20px;
+  position: relative;
+  border-radius: 10px;
+}
+
+#required {
+  padding: 4px 0px;
+  text-align: left;
+  font-size: 12px;
+}
+
+.inhoud-popup ::placeholder {
+  font-size: 12px;
+}
+
+.close-popup {
+  position: absolute;
+  right: 9px;
+  top: 17px;
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+
+.close-popup:hover {
+  color: red;
+}
+
+#popup-titel {
+  font-weight: 200;
+  text-align: left;
+  font-size: 150%;
+}
+
+.textb {
+  border: 1px solid grey;
+  margin: 8px 0;
+  padding: 12px 18px;
+  border-radius: 8px;
+}
+
+.textb label {
+  display: block;
+  text-align: left;
+  color: #333;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.textb input,
+.textb textarea {
+  width: 100%;
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 18px;
+  margin-top: 6px;
+}
+
+.plaats-bestel {
+  width: 60%;
+  height: 30px;
+  text-transform: uppercase;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.753);
+  color: whitesmoke;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.plaats-bestel:hover {
+  background-color: rgba(128, 128, 128, 0.582);
+  color: black;
+}
+
+@keyframes popup {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  30% {
+    opacity: 0.3;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: black;
+  border: 2px solid grey;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.575);
+}
+
+@media only screen and (max-width: 400px) {
+  h1 {
+    font-size: 200%;
+  }
+}
+
+@media only screen and (max-width: 823px) {
+  .externe-nav {
+    background-color: rgba(12, 12, 12, 0.986);
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0px;
+  }
+  .nav-links li {
+    padding: 10px 0px;
+    padding: 0;
+    margin: 3px;
+  }
+  .nav-links a {
+    font-size: 10px;
+    color: white;
+  }
+
+  #logo-nav a {
+    display: none;
+  }
+
+  #popup-titel {
+    font-size: 100%;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  h1 {
+    top: 50%;
+  }
+  .webshop {
+    grid-template-columns: 1fr;
+  }
+}

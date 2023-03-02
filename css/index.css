@@ -1,0 +1,304 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: linear-gradient(black 9%, #161720 17%);
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  background-color: black;
+  background: url(../img/peakyBlindersAchtergrond.jpg) no-repeat center center fixed;
+  height: 65vh;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0.7;
+  background-color: black;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Imbue", serif;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  letter-spacing: 12px;
+  font-size: 400%;
+  font-weight: 400;
+}
+
+.externe-nav {
+  z-index: 2;
+  width: 100%;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.771);
+  padding: 10px 20px;
+}
+
+.nav-links {
+  display: flex;
+}
+
+.nav-links li {
+  list-style: none;
+  flex: 1;
+  text-transform: uppercase;
+}
+
+.nav-links a {
+  color: black;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.nav-links a:hover {
+  color: rgba(0, 0, 0, 0.541);
+}
+
+#logo-nav {
+  flex: 3;
+  text-transform: uppercase;
+}
+
+#logo-nav :hover {
+  color: black;
+}
+
+main {
+  margin: 0px 40px;
+  color: rgba(255, 255, 255, 0.788);
+  line-height: 25px;
+}
+
+article {
+  position: relative;
+}
+
+article h1,
+h2,
+h3 {
+  margin: 10px 0px;
+}
+
+article h2,
+h3 {
+  font-weight: 500;
+  color: #ccc6a4;
+}
+
+#pagina-titel {
+  padding-top: 20px;
+}
+
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 0px;
+}
+
+.main-content div {
+  padding: 10px;
+}
+
+.links {
+  flex: 1;
+  background-color: rgba(255, 255, 255, 0.445);
+  color: white;
+  font-size: 110%;
+  border-radius: 8px;
+}
+
+.rechts {
+  flex: 3;
+  font-size: 200%;
+  align-self: center;
+  text-align: center;
+  color: #ccc6a4;
+}
+
+.interne-nav-links li {
+  padding-top: 5px;
+  list-style: none;
+}
+
+.interne-nav-links a {
+  letter-spacing: 2px;
+  text-decoration: none;
+  color: white;
+}
+
+.interne-nav-links a:hover {
+  color: #ccc6a4;
+}
+
+.hoofdrollen {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.box {
+  flex: 1;
+  flex-basis: 30%;
+  padding: 10px 20px;
+}
+
+.cast {
+  color: #ccc6a4;
+}
+
+.hoofdrollen img:hover {
+  transform: scale(1.05);
+}
+
+.container1 {
+  display: flex;
+}
+
+.box1,
+.box2,
+.box3 {
+  flex: 1;
+}
+
+.container2 {
+  display: flex;
+}
+
+.box4,
+.box5 {
+  flex: 1;
+}
+
+.box5 {
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+.box5 iframe {
+  border: 1px solid #ccc6a4;
+  width: 70%;
+  height: 120%;
+  border-radius: 2px;
+}
+
+.container-videogame {
+  display: flex;
+}
+
+.videogame-box1 {
+  flex: 1;
+}
+
+.videogame-box2 {
+  flex: 1;
+  text-align: center;
+}
+
+.videogame-box2 img {
+  width: 70%;
+  height: auto;
+  border-radius: 5px;
+  padding-bottom: 20px;
+}
+
+footer {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.371);
+  letter-spacing: 2px;
+  font-size: 90%;
+}
+
+footer a {
+  color: black;
+  text-decoration: underline;
+  font-size: 120%;
+}
+
+footer a:hover {
+  color: whitesmoke;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  border: 2px solid grey;
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.575);
+}
+
+::selection {
+  color: black;
+  background: #ccc6a4;
+}
+
+@media only screen and (max-width: 823px) {
+  main {
+    margin: 15px;
+  }
+
+  .container2,
+  .container1,
+  .container-videogame,
+  .hoofdrollen {
+    flex-direction: column;
+  }
+
+  .box5 iframe {
+    width: 100%;
+  }
+
+  .externe-nav {
+    background-color: rgba(12, 12, 12, 0.986);
+  }
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0px;
+  }
+  .nav-links li {
+    padding: 10px 0px;
+    padding: 0;
+    margin: 3px;
+  }
+  .nav-links a {
+    font-size: 10px;
+    color: white;
+  }
+
+  #logo-nav {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1207px) {
+  .videogame-box2 img {
+    width: 90%;
+    height: auto;
+  }
+
+  .videogame-box2 {
+    align-self: center;
+  }
+}

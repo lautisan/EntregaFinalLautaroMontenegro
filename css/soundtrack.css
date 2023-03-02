@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: linear-gradient(black 9%, #161720 17%);
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    background-color: black;
+    background: url(../img/peakyBlindersAchtergrond.jpg) no-repeat center center fixed;
+    height: 65vh;
+    position: relative;
+}
+main {
+    margin: 0px 40px;
+    color: rgba(255, 255, 255, 0.788);
+    line-height: 25px;
+}
+
+.overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+    background-color: black;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Imbue", serif;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    letter-spacing: 12px;
+    font-size: 400%;
+    font-weight: 400;
+}
+
+.externe-nav {
+    z-index: 2;
+    width: 100%;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.771);
+    padding: 10px 20px;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links li {
+    list-style: none;
+    flex: 1;
+    text-transform: uppercase;
+}
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    color: rgba(0, 0, 0, 0.541);
+}
+
+#logo-nav {
+    flex: 3;
+    text-transform: uppercase;
+}
+
+#logo-nav :hover {
+    color: black;
+}
+.musica li{
+    margin-left: 6rem;
+}
+.musica p{
+    font-size: 1.8rem;
+    margin-left: 4rem;
+}
+.tit_temp{
+    color: #ccc6a4;
+}
+.tit_temp h2{
+    margin: 4rem;
+    font-size: 3.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.tit_temp h4{
+    margin: 4rem;
+    font-size: 1.7rem;
+    
+}
+footer {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.371);
+    letter-spacing: 2px;
+    font-size: 90%;
+}
+
+footer a {
+    color: black;
+    text-decoration: underline;
+    font-size: 120%;
+}
+
+footer a:hover {
+    color: whitesmoke;
+}
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    border: 2px solid grey;
+    background: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.575);
+}
+
+::selection {
+    color: black;
+    background: #ccc6a4;
+}
+@media only screen and (max-width: 823px) {
+    main {
+        margin: 15px;
+    }
+    
+    .externe-nav {
+        background-color: rgba(12, 12, 12, 0.986);
+    }
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0px;
+    }
+    .nav-links li {
+        padding: 10px 0px;
+        padding: 0;
+        margin: 3px;
+    }
+    .nav-links a {
+        font-size: 10px;
+        color: white;
+    }
+
+    #logo-nav {
+        display: none;
+    }
+}
