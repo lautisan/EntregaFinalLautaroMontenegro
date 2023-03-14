@@ -153,6 +153,12 @@ footer a:hover {
     background: #ccc6a4;
 }
 /* mobile */
+@media only screen and (max-width: 1024px) {
+    .nav-links li {
+        padding: 10px 20px;
+        margin: 3px;
+    } 
+}
 @media only screen and (max-width: 823px) {
     main {
         margin: 15px;

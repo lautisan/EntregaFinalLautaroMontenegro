@@ -285,10 +285,12 @@ main {
   background: rgba(255, 255, 255, 0.575);
 }
 
-@media only screen and (max-width: 400px) {
-  h1 {
-    font-size: 200%;
-  }
+
+@media only screen and (max-width: 1024px) {
+  .nav-links li {
+      padding: 10px 20px;
+      margin: 3px;
+  } 
 }
 
 @media only screen and (max-width: 823px) {
@@ -327,5 +329,10 @@ main {
   }
   .webshop {
     grid-template-columns: 1fr;
+  }
+}
+@media only screen and (max-width: 400px) {
+  h1 {
+    font-size: 200%;
   }
 }

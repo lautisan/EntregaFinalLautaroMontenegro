@@ -149,6 +149,16 @@ button:hover {
   color: black;
 }
 
+@media only screen and (max-width: 1024px) {
+  h1{
+    padding: 20px;
+  }
+  .nav-links li {
+      padding: 10px 20px;
+      margin: 3px;
+  } 
+}
+
 @media only screen and (max-width: 823px) {
   h1 {
     z-index: -2;
