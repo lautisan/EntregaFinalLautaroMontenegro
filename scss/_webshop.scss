@@ -1,0 +1,243 @@
+.Wbs {
+	font-family: "Roboto", sans-serif;
+}
+.web {
+	text-align: center;
+	position: relative;
+}
+.webshop {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-row-gap: 30px;
+	grid-column-gap: 30px;
+	list-style: none;
+	li {
+		position: relative;
+		flex-direction: column;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+.product-foto {
+	width: 70%;
+	height: auto;
+	border: 3px solid #ccc6a4;
+	border-radius: 2px;
+	&:hover {
+		transform: scale(1.05);
+		cursor: pointer;
+		transition: 0.2s all ease-in-out;
+	}
+}
+.product-info {
+	margin: 10px 0px;
+	padding: 10px 0px;
+	display: flex;
+	width: 70%;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-color: $background-color_3;
+	color: $color_4;
+	font-size: 18px;
+	border-radius: 5px;
+}
+.product-beschrijving {
+	font-size: 14px;
+	color: $color_1;
+	margin: 4px 0px;
+}
+.product-prijs {
+	font-size: 14px;
+	color: $color_5;
+}
+.oude-prijs {
+	color: $color_6;
+	font-size: 13px;
+}
+.achtergrond-popup {
+	width: 100%;
+	height: 100%;
+	background-color: $background-color_4;
+	position: absolute;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	display: none;
+	position: fixed;
+	z-index: 10;
+	animation-name: popup;
+	animation-duration: 0.15s;
+	animation-timing-function: ease-in-out;
+}
+.inhoud-popup {
+	width: 550px;
+	height: 450px;
+	background-color: $background-color_5;
+	padding: 20px;
+	position: relative;
+	border-radius: 10px;
+	&::placeholder {
+		font-size: 12px;
+	}
+}
+#required {
+	padding: 4px 0px;
+	text-align: left;
+	font-size: 12px;
+}
+.close-popup {
+	position: absolute;
+	right: 9px;
+	top: 17px;
+	font-size: 1.7rem;
+	cursor: pointer;
+	&:hover {
+		color: $color_5;
+	}
+}
+#popup-titel {
+	font-weight: 200;
+	text-align: left;
+	font-size: 150%;
+}
+.textb {
+	border: 1px solid grey;
+	margin: 8px 0;
+	padding: 12px 18px;
+	border-radius: 8px;
+	label {
+		display: block;
+		text-align: left;
+		color: $color_7;
+		text-transform: uppercase;
+		font-size: 14px;
+	}
+	input {
+		width: 100%;
+		border: none;
+		background: none;
+		outline: none;
+		font-size: 18px;
+		margin-top: 6px;
+	}
+	textarea {
+		width: 100%;
+		border: none;
+		background: none;
+		outline: none;
+		font-size: 18px;
+		margin-top: 6px;
+	}
+}
+.plaats-bestel {
+	width: 60%;
+	height: 30px;
+	text-transform: uppercase;
+	border: none;
+	background-color: $background-color_6;
+	color: $color_8;
+	border-radius: 8px;
+	font-weight: bold;
+	cursor: pointer;
+	&:hover {
+		background-color: $background-color_7;
+		color: $color_2;
+	}
+}
+@keyframes popup {
+	0% {
+		opacity: 0;
+	}
+	10% {
+		opacity: 0.1;
+	}
+	20% {
+		opacity: 0.2;
+	}
+	30% {
+		opacity: 0.3;
+	}
+	40% {
+		opacity: 0.4;
+	}
+	50% {
+		opacity: 0.5;
+	}
+	60% {
+		opacity: 0.6;
+	}
+	70% {
+		opacity: 0.7;
+	}
+	80% {
+		opacity: 0.8;
+	}
+	90% {
+		opacity: 0.9;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+// &::-webkit-scrollbar {
+// 	width: 15px;
+// }
+// &::-webkit-scrollbar-track {
+// 	background: black;
+// 	border: 2px solid grey;
+// }
+// &::-webkit-scrollbar-thumb {
+// 	background: rgba(255, 255, 255, 0.575);
+// }
+@media only screen and (max-width: 1024px) {
+	.nav-links {
+		li {
+			padding: 10px 20px;
+			margin: 3px;
+		}
+	}
+}
+@media only screen and (max-width: 823px) {
+	.externe-nav {
+		background-color: $background-color_8;
+	}
+	.nav-links {
+		flex-direction: column;
+		align-items: center;
+		padding: 10px 0px;
+		li {
+			padding: 10px 0px;
+			padding: 0;
+			margin: 3px;
+		}
+		a {
+			font-size: 10px;
+			color: $color_1;
+		}
+	}
+	#logo-nav {
+		a {
+			display: none;
+		}
+	}
+	#popup-titel {
+		font-size: 100%;
+		text-align: center;
+	}
+}
+@media only screen and (max-width: 800px) {
+	h1 {
+		top: 50%;
+	}
+	.webshop {
+		grid-template-columns: 1fr;
+	}
+}
+@media only screen and (max-width: 400px) {
+	h1 {
+		font-size: 200%;
+	}
+}
