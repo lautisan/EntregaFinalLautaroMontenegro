@@ -243,59 +243,6 @@ footer a:hover {
   color: whitesmoke;
 }
 
-@media only screen and (max-width: 1207px) {
-  .videogame-box2 {
-    align-self: center;
-  }
-  .videogame-box2 img {
-    width: 90%;
-    height: auto;
-  }
-  .nav-links li {
-    padding: 10px 20px;
-    margin: 3px;
-  }
-}
-@media only screen and (max-width: 823px) {
-  main {
-    margin: 15px;
-  }
-  .container2 {
-    flex-direction: column;
-  }
-  .container1 {
-    flex-direction: column;
-  }
-  .container-videogame {
-    flex-direction: column;
-  }
-  .hoofdrollen {
-    flex-direction: column;
-  }
-  .box5 iframe {
-    width: 100%;
-  }
-  .externe-nav {
-    background-color: rgba(12, 12, 12, 0.986);
-  }
-  .nav-links {
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 0px;
-  }
-  .nav-links li {
-    padding: 10px 0px;
-    padding: 0;
-    margin: 3px;
-  }
-  .nav-links a {
-    font-size: 10px;
-    color: white;
-  }
-  #logo-nav {
-    display: none;
-  }
-}
 .Wbs {
   font-family: "Roboto", sans-serif;
 }
@@ -495,57 +442,13 @@ footer a:hover {
     opacity: 1;
   }
 }
-@media only screen and (max-width: 1024px) {
-  .nav-links li {
-    padding: 10px 20px;
-    margin: 3px;
-  }
-}
-@media only screen and (max-width: 823px) {
-  .externe-nav {
-    background-color: rgba(12, 12, 12, 0.986);
-  }
-  .nav-links {
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 0px;
-  }
-  .nav-links li {
-    padding: 10px 0px;
-    padding: 0;
-    margin: 3px;
-  }
-  .nav-links a {
-    font-size: 10px;
-    color: white;
-  }
-  #logo-nav a {
-    display: none;
-  }
-  #popup-titel {
-    font-size: 100%;
-    text-align: center;
-  }
-}
-@media only screen and (max-width: 800px) {
-  h1 {
-    top: 50%;
-  }
-  .webshop {
-    grid-template-columns: 1fr;
-  }
-}
-@media only screen and (max-width: 400px) {
-  h1 {
-    font-size: 200%;
-  }
-}
 .principal {
   display: contents;
 }
 
 .trailer {
-  padding-left: 6rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .musica li {
@@ -570,54 +473,6 @@ footer a:hover {
   font-size: 1.7rem;
 }
 
-@media only screen and (max-width: 1024px) {
-  .nav-links li {
-    padding: 10px 20px;
-    margin: 3px;
-  }
-}
-@media only screen and (max-width: 823px) {
-  main {
-    margin: 15px;
-  }
-  .externe-nav {
-    background-color: rgba(12, 12, 12, 0.986);
-  }
-  .nav-links {
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 0px;
-  }
-  .nav-links li {
-    padding: 10px 0px;
-    padding: 0;
-    margin: 3px;
-  }
-  .nav-links a {
-    font-size: 10px;
-    color: white;
-  }
-  #logo-nav {
-    display: none;
-  }
-  .tit_temp h2 {
-    font-size: 2rem;
-    display: flex;
-    justify-content: center;
-  }
-  .musica p {
-    font-size: 20px;
-  }
-}
-@media only screen and (max-width: 450px) {
-  .principal {
-    display: contents;
-  }
-  .trailer {
-    display: flex;
-    width: 100%;
-  }
-}
 .contenedor {
   max-width: 110rem;
   margin: 0 auto;
@@ -678,37 +533,6 @@ footer a:hover {
   color: whitesmoke;
 }
 
-@media only screen and (max-width: 1024px) {
-  .nav-links li {
-    padding: 10px 20px;
-    margin: 3px;
-  }
-}
-@media only screen and (max-width: 823px) {
-  main {
-    margin: 15px;
-  }
-  .externe-nav {
-    background-color: rgba(12, 12, 12, 0.986);
-  }
-  .nav-links {
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 0px;
-  }
-  .nav-links li {
-    padding: 10px 0px;
-    padding: 0;
-    margin: 3px;
-  }
-  .nav-links a {
-    font-size: 10px;
-    color: white;
-  }
-  #logo-nav {
-    display: none;
-  }
-}
 main {
   display: flex;
   align-items: center;
@@ -771,7 +595,7 @@ main {
   color: red;
 }
 
-button {
+.send {
   width: 60%;
   height: 30px;
   text-transform: uppercase;
@@ -782,13 +606,13 @@ button {
   font-weight: bold;
   cursor: pointer;
 }
-button:hover {
+.send:hover {
   background-color: rgba(128, 128, 128, 0.582);
   color: black;
 }
 
 @media only screen and (max-width: 1024px) {
-  h1 {
+  .contact {
     padding: 20px;
   }
   .nav-links li {
@@ -797,7 +621,7 @@ button:hover {
   }
 }
 @media only screen and (max-width: 823px) {
-  h1 {
+  .contact {
     z-index: -2;
   }
   .externe-nav {
@@ -832,6 +656,206 @@ button:hover {
   }
   .textb label {
     font-size: 12px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .nav-links li {
+    padding: 10px 20px;
+    margin: 3px;
+  }
+}
+@media only screen and (max-width: 823px) {
+  main {
+    margin: 15px;
+  }
+  .externe-nav {
+    background-color: rgba(12, 12, 12, 0.986);
+  }
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0px;
+  }
+  .nav-links li {
+    padding: 10px 0px;
+    padding: 0;
+    margin: 3px;
+  }
+  .nav-links a {
+    font-size: 10px;
+    color: white;
+  }
+  #logo-nav {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1207px) {
+  .videogame-box2 {
+    align-self: center;
+  }
+  .videogame-box2 img {
+    width: 90%;
+    height: auto;
+  }
+  .nav-links li {
+    padding: 10px 20px;
+    margin: 3px;
+  }
+}
+@media only screen and (max-width: 823px) {
+  main {
+    margin: 15px;
+  }
+  .container2 {
+    flex-direction: column;
+  }
+  .container1 {
+    flex-direction: column;
+  }
+  .container-videogame {
+    flex-direction: column;
+  }
+  .hoofdrollen {
+    flex-direction: column;
+  }
+  .box5 iframe {
+    width: 100%;
+  }
+  .externe-nav {
+    background-color: rgba(12, 12, 12, 0.986);
+  }
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0px;
+  }
+  .nav-links li {
+    padding: 10px 0px;
+    padding: 0;
+    margin: 3px;
+  }
+  .nav-links a {
+    font-size: 10px;
+    color: white;
+  }
+  #logo-nav {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .nav-links li {
+    padding: 10px 20px;
+    margin: 3px;
+  }
+}
+@media only screen and (max-width: 823px) {
+  .externe-nav {
+    background-color: rgba(12, 12, 12, 0.986);
+  }
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0px;
+  }
+  .nav-links li {
+    padding: 10px 0px;
+    padding: 0;
+    margin: 3px;
+  }
+  .nav-links a {
+    font-size: 10px;
+    color: white;
+  }
+  #logo-nav a {
+    display: none;
+  }
+  #popup-titel {
+    font-size: 100%;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 800px) {
+  h1 {
+    top: 50%;
+  }
+  .webshop {
+    grid-template-columns: 1fr;
+  }
+}
+@media only screen and (max-width: 400px) {
+  h1 {
+    font-size: 200%;
+  }
+}
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  border: 2px solid grey;
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.575);
+}
+
+::selection {
+  color: black;
+  background: #ccc6a4;
+}
+@media only screen and (max-width: 1024px) {
+  .nav-links li {
+      padding: 10px 20px;
+      margin: 3px;
+  } 
+}
+@media only screen and (max-width: 823px) {
+  main {
+      margin: 15px;
+  }
+  
+  .externe-nav {
+      background-color: rgba(12, 12, 12, 0.986);
+  }
+  .nav-links {
+      flex-direction: column;
+      align-items: center;
+      padding: 10px 0px;
+  }
+  .nav-links li {
+      padding: 10px 0px;
+      padding: 0;
+      margin: 3px;
+  }
+  .nav-links a {
+      font-size: 10px;
+      color: white;
+  }
+
+  #logo-nav {
+      display: none;
+  }
+  .tit_temp h2{
+      font-size: 2rem;
+      display: flex;
+      justify-content: center;
+  }
+  .musica p{
+      font-size: 20px;
+  }
+}
+@media only screen and (max-width:450px) {
+  .principal {
+      display: contents;
+      padding-right: 1.5;
+  }
+  .musica{
+    padding-right: 3.5rem;
+  }
+  .trailer{
+      display: flex;
+      width: 100%;
   }
 }
 

@@ -1,17 +1,18 @@
 * {
     box-sizing: border-box;
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
+
 body {
-    background: linear-gradient(black 9%, #161720 17%);
     font-family: "Roboto", sans-serif;
+    background-color: black;
 }
 
 header {
     background-color: black;
     background: url(../img/peakyBlindersAchtergrond.jpg) no-repeat center center fixed;
-    height: 65vh;
+    height: 100vh;
     position: relative;
 }
 
@@ -23,23 +24,21 @@ header {
     background-color: black;
 }
 
-h1 {
-    text-align: center;
+.contact {
     font-family: "Imbue", serif;
     color: white;
     position: absolute;
-    top: 50%;
+    top: 8%;
     left: 50%;
     transform: translateX(-50%);
     letter-spacing: 12px;
-    font-size: 400%;
+    font-size: 350%;
     font-weight: 400;
 }
 
 .externe-nav {
-    z-index: 2;
-    width: 100%;
     position: fixed;
+    width: 100%;
     background-color: rgba(255, 255, 255, 0.771);
     padding: 10px 20px;
 }
@@ -74,49 +73,80 @@ h1 {
 #logo-nav :hover {
     color: black;
 }
-.contenedor {
-    max-width: 110rem;
-    margin: 0 auto;
-}
 
-a{
-    text-decoration: none;
-    color: #000;
-    
-}
-.galeria__flex{
-    display:flex;
-    max-width: 100vw;
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    
-}
-img {
-    width: 350px;
-    height: 220px;
-    object-fit: cover;
-    object-position: center;
-    padding: 6px;
-}
-img:hover{
-    cursor: pointer;
-    opacity: 0,7;
-    transform: scale(1.05);
-    transition: 0.6s ease-out;
-    filter: grayscale(0.9)
-}
-
-.principal h2{
+main {
     display: flex;
+    align-items: center;
     justify-content: center;
-    flex: 3;
-    font-size: 200%;
-    align-self: center;
+}
+
+.contact-form {
+    width: 85%;
+    max-width: 600px;
+    background: #f1f1f1ec;
+    position: absolute;
+    top: 63%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 40px;
+    margin: 0;
+    border-radius: 8px;
     text-align: center;
-    color: #ccc6a4;
+}
+
+.contact-form h2 {
+    margin-top: 0;
+    font-weight: 200;
+}
+
+.textb {
+    border: 1px solid grey;
+    margin: 8px 0;
+    padding: 12px 18px;
+    border-radius: 8px;
+}
+
+.textb label {
+    display: block;
+    text-align: left;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.textb input,
+.textb textarea {
+    width: 100%;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 18px;
+    margin-top: 6px;
+}
+
+.input-field.valid {
+    color: green;
+}
+
+.input-field.invalid {
+    color: red;
+}
+
+.submit {
+    width: 60%;
+    height: 30px;
+    text-transform: uppercase;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.753);
+    color: whitesmoke;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background-color: rgba(128, 128, 128, 0.582);
+    color: black;
 }
 footer {
     text-align: center;
@@ -135,42 +165,28 @@ footer a:hover {
     color: whitesmoke;
 }
 
-::-webkit-scrollbar {
-    width: 15px;
-}
-
-::-webkit-scrollbar-track {
-    border: 2px solid grey;
-    background: black;
-}
-
-::-webkit-scrollbar-thumb {
-    background: rgba(255, 255, 255, 0.575);
-}
-
-::selection {
-    color: black;
-    background: #ccc6a4;
-}
-/* mobile */
 @media only screen and (max-width: 1024px) {
+    .contact{
+        padding: 20px;
+    }
     .nav-links li {
         padding: 10px 20px;
         margin: 3px;
     } 
 }
+
 @media only screen and (max-width: 823px) {
-    main {
-        margin: 15px;
+    .contact {
+        z-index: -2;
     }
-    
+
     .externe-nav {
         background-color: rgba(12, 12, 12, 0.986);
     }
     .nav-links {
         flex-direction: column;
         align-items: center;
-        padding: 10px 0px;
+        padding: 5px 0px;
     }
     .nav-links li {
         padding: 10px 0px;
@@ -184,5 +200,19 @@ footer a:hover {
 
     #logo-nav {
         display: none;
+    }
+
+    .contact-form {
+        padding: 10px 3px;
+        width: 95%;
+    }
+
+    .textb input,
+    .textb textarea {
+        font-size: 12px;
+    }
+
+    .textb label {
+        font-size: 12px;
     }
 }

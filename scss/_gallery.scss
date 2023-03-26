@@ -73,36 +73,4 @@ footer {
 // 	color: $color_2;
 // 	background: #ccc6a4;
 // }
-@media only screen and (max-width: 1024px) {
-	.nav-links {
-		li {
-			padding: 10px 20px;
-			margin: 3px;
-		}
-	}
-}
-@media only screen and (max-width: 823px) {
-	main {
-		margin: 15px;
-	}
-	.externe-nav {
-		background-color: $background-color_8;
-	}
-	.nav-links {
-		flex-direction: column;
-		align-items: center;
-		padding: 10px 0px;
-		li {
-			padding: 10px 0px;
-			padding: 0;
-			margin: 3px;
-		}
-		a {
-			font-size: 10px;
-			color: $color_1;
-		}
-	}
-	#logo-nav {
-		display: none;
-	}
-}
+
